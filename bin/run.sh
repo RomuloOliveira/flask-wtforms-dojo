@@ -2,4 +2,6 @@
 
 set -e
 
-# Run your start command here
+. ./bin/build
+
+python app.py
