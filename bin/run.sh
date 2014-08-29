@@ -2,6 +2,6 @@
 
 set -e
 
-. ./bin/build
+. ./bin/build.sh
 
 python app.py
