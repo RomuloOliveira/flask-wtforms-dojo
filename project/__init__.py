@@ -12,3 +12,5 @@ if 'DEVEL' in os.environ and os.environ['DEVEL']:
 
 if 'TEST' in os.environ and os.environ['TEST']:
     app.test = True
+
+from project.controllers import *
