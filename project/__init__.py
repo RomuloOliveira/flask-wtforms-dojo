@@ -13,4 +13,7 @@ if 'DEVEL' in os.environ and os.environ['DEVEL']:
 if 'TEST' in os.environ and os.environ['TEST']:
     app.test = True
 
+app.config['CSRF_ENABLED'] = False
+app.config['WTF_CSRF_ENABLED'] = False
+
 from project.controllers import *
