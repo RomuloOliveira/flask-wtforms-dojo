@@ -23,6 +23,8 @@
                 {% endfor %}
             </ul>
         {% endif %}
+        {{ form.something_list.label() }}
+        {{ form.something_list() }}
         {{ form.submit()}}
     </form>
 </body>

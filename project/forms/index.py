@@ -22,4 +22,6 @@ class IndexForm(Form):
         ]
     )
 
+    something_list = FieldList(StringField('Something', [validators.required()]), min_entries=3)
+
     submit = SubmitField('>')
